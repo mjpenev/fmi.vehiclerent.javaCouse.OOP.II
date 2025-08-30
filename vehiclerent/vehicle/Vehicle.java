@@ -61,8 +61,6 @@ public sealed abstract class Vehicle permits Bicycle, MotorVehicle {
         }
 
         this.rented = false;
-        this.currentDriver = null;
-        this.startRentTime = null;
     }
 
     public abstract double calculateRentalPrice(LocalDateTime startOfRent, LocalDateTime endOfRent) throws InvalidRentingPeriodException;
